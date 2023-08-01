@@ -14,7 +14,9 @@ Eventos();
 function Eventos() {
     contenedor.addEventListener('click', e => {
         e.preventDefault();
-        agregarImagen(e.target.id);
+        if(e.target.id === 'Piedra' || e.target.id === 'Papel' || e.target.id === 'Tijera' ){
+            agregarImagen(e.target.id);
+        }
     });
 }
 
@@ -36,15 +38,6 @@ function agregarImagen(id){
     };
 
 
-    console.log(selectOne);
-    console.log(selectTwo);
-
-
-    
-
-    
-    console("volvi");
-
 }
 
 
@@ -52,9 +45,9 @@ function Resul(opcionOne,opcionTwo){
     
     console.log(opcionOne);
     console.log(opcionTwo);
-
     
-    if(opcionOne === opcionTwo){
+    
+    if(opcionOne == opcionTwo){
         alert("Empate")
     };
 
