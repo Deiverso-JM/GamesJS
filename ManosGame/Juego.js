@@ -39,7 +39,7 @@ function agregarImagen(id) {
         const opcion = document.createElement("img");
         opcion.setAttribute("id", `${id}`);
         opcion.classList.add("h-40");
-        opcion.setAttribute("src", `/Img/${id}.png`);
+        opcion.setAttribute("src", `./Img/${id}.png`);
         opcionOne.appendChild(opcion);
         texto.textContent = 'Maquina escogiendo...'
     }
@@ -50,7 +50,7 @@ function agregarImagen(id) {
             const opcion = document.createElement("img");
             opcion.setAttribute("id", `${id}`);
             opcion.classList.add("h-40");
-            opcion.setAttribute("src", `/Img/${img[number]}.png`);
+            opcion.setAttribute("src", `./Img/${img[number]}.png`);
             opcionTwo.appendChild(opcion);
             Resul(selectOne, number);
         }
