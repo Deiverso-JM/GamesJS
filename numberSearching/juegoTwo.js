@@ -67,7 +67,6 @@ function Resultado(numeroHuman, numeroMachine) {
         gifStatus("|GANASTE|", "https://giphy.com/embed/100QoSU9uTFU64");
         setTimeout(() => {
             window.location.reload();
-            
         }, 5000);
     } else {
         //Validaciones de menores
@@ -133,9 +132,14 @@ function gifStatus(texto, url) {
         "to-pink-600"
     );
 
-    gif.className = 'mx-auto'
-    gif.setAttribute("width", "480");
-    gif.setAttribute("height", "452");
+    gif.classList.add(
+        "mx-auto",
+        "sm:w-auto",
+        "sm:h-auto",
+        "lg:w-[480px]",
+        "lg:h-[452px]"
+    );
+
     gif.setAttribute("src", url);
     console.log(contenedorResultado.children.length);
     if (contenedorResultado.children.length === 0) {
