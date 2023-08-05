@@ -65,6 +65,10 @@ function Resultado(numeroHuman, numeroMachine) {
     console.log(numeroMachine);
     if (numeroHuman === numeroMachine) {
         gifStatus("|GANASTE|", "https://giphy.com/embed/100QoSU9uTFU64");
+        setTimeout(() => {
+            window.location.reload();
+            
+        }, 5000);
     } else {
         //Validaciones de menores
         if (numeroHuman < numeroMachine / 6)
