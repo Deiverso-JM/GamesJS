@@ -40,7 +40,7 @@ function agregarElemento(img, descripcion, id) {
     const simbol = document.createElement("img");
 
     //Atributos
-    simbol.src = `/Img/${img}.png`;
+    simbol.src = `./Img/${img}.png`;
     simbol.alt = descripcion;
     cajaHija.alt = descripcion;
     simbol.id = id;
